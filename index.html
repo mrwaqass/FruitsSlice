@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fruits Game</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width" initial-scale="1.0" user-scaleable="yes">
+        <link rel="stylesheet" type="text/css" href="styling.css">
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.css">
+        <script src="jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+        <script src="jquery-ui-1.12.1.custom/external/jquery/jquery.js"></script>
+        <script src="jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <video autoplay loop muted id="bgvideo">
+            <source src="images/nature%20video.mp4" type="video/mp4">
+        </video>
+        <div id="container">
+            <div id="score">Score: <span id="scorevalue">0</span></div>
+            <div id="chance"></div>
+            <button id="option" title="Guide"></button>
+            <button id="developerButton" title="Developer"></button>
+            
+<!--            option dialog-->
+            <div id="optionDialog" title="Guideness">
+                <div id="loadGuide" title="How to play?">
+        <p><span class="ui-icon ui-icon-notice"></span>Please Catch all the fruits.<br />1. Hover mouse on fruits to Catch them.<br />2. After hovering your score will be increment by 1.<br /><br /><strong class="note">Note: </strong>You have only 3 Trials to play. Enjoy!</p>
+</div>
+            </div>
+            
+<!--            developer dialog-->
+            <div id="developerDialog" title="Developer">
+                
+<div id="loadDeveloper" title="Developer Info!">
+        <p id="para1"><span class="ui-icon ui-icon-circle-check"></span> Developed by <strong id="developerName">Muhammad Waqas</strong></p><p id="para2" class="ui-widget ui-corner-all"><a href="./images/developer.jpg" download><img src="./images/developer.jpg" id="developerImage"></a></p><p id="para3"><span class="ui-icon ui-icon-contact"></span>(+92)348-7228128<br /><span class="ui-icon ui-icon-mail-open"></span>waqasayub897@gmail.com<br /><span class="ui-icon ui-icon-circle-zoomin"></span> <a href="http://www.pakvnet.tk" title="Go to Home Page">www.pakvnet.tk</a><br /><br /><strong class="note">Note:</strong> Copyright &copy; All Rights Reserved.</p>
+</div>
+            </div>
+            
+<!--            game area-->
+            
+            <div id="gameArea" class="ui-widget ui-corner-all">
+                <img id="fruit1" class="fruit">
+            </div>
+            <div id="instructionBox" class="ui-widget ui-corner-all">Catch Fruits</div>
+            <div id="startreset"><button id="startresetButton">Start Game</button></div>
+            <div id="developer" class="ui-corner-all ui-widget"></div>
+            <div id="gameOver" class="ui-widget ui-corner-all"></div>
+        </div>
+        <audio id="slicesound">
+            <source src="audio/slicefruit.mp3">
+            <source src="audio/slicefruit.ogg">
+        </audio>
+        <script src="jquery.js"></script>
+    </body>
+</html>

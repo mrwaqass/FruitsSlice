@@ -1,0 +1,214 @@
+html{
+    height: 100%;
+}
+#bgvideo{
+    position: fixed;
+    min-height: 100%;
+    min-width: 100%;
+    z-index: -100;
+    margin: 0px 0px;
+}
+#container{
+    height: 580px;
+    width: 750px;
+    background-color: rgba( 0, 198, 182, 0.2 );
+/*    background-color: rgba( 194, 105, 9, 0.278 );*/
+    margin: 0px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 4px 0px #009de4;
+    -webkit-box-shadow: 0px 3px 4px 0px #009de4;
+    -moz-box-shadow: 0px 3px 4px 0px #009de4;
+    -ms-box-shadow: 0px 3px 4px 0px #009de4;
+    -o-box-shadow: 0px 3px 4px 0px #009de4;
+    position: relative;
+    top: 20px;
+}
+#score{
+    background-color: #F1FF92;
+    padding: 10px;
+    height: 20px;
+    line-height: 1.5;
+    text-align: center;
+    width: auto;
+    position: absolute;
+    left: 670px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 0px #9da853;
+    -webkit-box-shadow: 0px 2px 0px #9da853;
+    -moz-box-shadow: 0px 2px 0px #9da853;
+    -ms-box-shadow: 0px 2px 0px #9da853;
+    -o-box-shadow: 0px 2px 0px #9da853;
+    color: #888E5F;
+}
+#chance{
+    background-color: #F1FF92;
+    padding: 11px;
+    position: absolute;
+    left: 20px;
+    width: 80px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 0px #9da853;
+    -webkit-box-shadow: 0px 2px 0px #9da853;
+    -moz-box-shadow: 0px 2px 0px #9da853;
+    -ms-box-shadow: 0px 2px 0px #9da853;
+    -o-box-shadow: 0px 2px 0px #9da853;
+    color: #888E5F;
+    display: none;
+}
+
+#gameArea{
+    height: 390px;
+    width: 670px;
+    background-color: #FFFFFF;
+    margin: 50px auto 10px auto;
+    box-shadow: 0px 3px 3px 0px #535aa8;
+    -moz-box-shadow: 0px 3px 3px 0px #535aa8;
+    -webkit-box-shadow: 0px 3px 3px 0px #535aa8;
+    -ms-box-shadow: 0px 3px 3px 0px #535aa8;
+    -o-box-shadow: 0px 3px 3px 0px #535aa8;
+    font-size: 100px;
+    font-family: cursive, sans-serif;
+    text-align: center;
+    color: #f4640a;
+    position: relative;
+    overflow: hidden;
+}
+
+#instructionBox{
+    width: 370px;
+    height: auto;
+    background-color: #B481D9;
+    margin: 0px auto 10px auto;
+    color: #e8e411;
+/*
+    box-shadow: 0px 2px 2px 0px #8153a8;
+    -webkit-box-shadow: 0px 2px 2px 0px #8153a8;
+    -moz-box-shadow: 0px 2px 2px 0px #8153a8;
+    -o-box-shadow: 0px 2px 2px 0px #8153a8;
+    -ms-box-shadow: 0px 2px 2px 0px #8153a8;
+*/
+    text-align: center;
+    padding: 15px;
+/*    font-size: 16px;*/
+    font-family: cursive,sans-serif;
+    font-weight: bold;
+}
+#startreset{
+    width: 150px;
+    margin: 15px auto;
+/*    background-color: #CEE9F5;*/
+/*    padding: 12px;*/
+/*    box-shadow: 0px 2px 3px #13806c;*/
+/*
+    -webkit-box-shadow: 0px 2px 3px #13806c;
+    -moz-box-shadow: 0px 2px 3px #13806c;
+    -ms-box-shadow: 0px 2px 3px #13806c;
+    -o-box-shadow: 0px 2px 3px #13806c;
+*/
+/*    border-radius: 3px;*/
+/*    cursor: pointer;*/
+    position: relative;
+/*    transition: all .2s;*/
+}
+
+#developer{
+    position: relative;
+    color: white;
+    margin: 0px 5px;
+    left: 590px;
+    width: 130px;
+    background-color: rgba( 0, 198, 182, 0.2 );
+    text-align: center;
+}
+
+#gameOver{
+    width: 500px;
+    height: 200px;
+    background: linear-gradient(#F3CA6B,#F3706C);
+    background: -webkit-linear-gradient(#F3CA6B,#F3706C);
+    background: -moz-linear-gradient(#F3CA6B,#F3706C);
+    background: -o-linear-gradient(#F3CA6B,#F3706C);
+    background: -ms-linear-gradient(#F3CA6B,#F3706C);
+    position: absolute;
+    top: 167px;
+    left: 140px;
+    color: white;
+    font-size: 2.4em;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 2;
+    display: none;
+}
+
+.life{
+    width: 16px;
+    height: 16px;
+    margin: 0px 5px 0px 5px;
+}
+
+.fruit{
+    display: none;
+    position: absolute;
+}
+#option{
+    position: absolute;
+    top: 538px;
+    left: 500px;
+    z-index: 2;
+/*    width: 2px;*/
+    height: 40px;
+    font-size: 16px;
+}
+
+#developerButton{
+    position: absolute;
+    top: 538px;
+    left: 550px;
+    z-index: 2;
+/*    width: 2px;*/
+    height: 40px;
+    font-size: 16px;
+}
+
+/*ajax section*/
+
+.clear{
+    clear: both;
+}
+
+#loadDeveloper p , #loadGuide p{
+    margin: 0px 0px;
+    padding: 10px;
+}
+#loadDeveloper a{
+    text-decoration: none;
+}
+#para1{
+/*    position: relative;*/
+}
+#para2{
+    position: absolute;
+    top: 0px;
+    left: 380px;
+}
+#para3{
+    position: relative;
+}
+#developerName{
+    color: #c6541e;
+}
+#developerImage{
+    border-radius: 50%;
+    width: 100%;
+    margin-top: 0px;
+}
+.note{
+    color: #10720d;
+}
+#loadGuide{
+    display: none;
+}
+#loadDeveloper{
+    display: none;
+}
